@@ -1,22 +1,11 @@
-.calc input {
+.calc div.result {
   background-color: #858694;
-  border: 0;
-  width: 100%;
-  margin-top: 0;
-  padding: 0;
+  padding: 30px;
   text-align: right;
   color: white;
   font-weight: 700;
   font-size: 1.5rem;
-}
-
-.calc input::placeholder {
-  color: white;
-  opacity: 1;
-}
-
-.calc input::-webkit-outer-spin-button {
-  -webkit-appearance: none;
+  height: 30px;
 }
 
 .calc {

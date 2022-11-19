@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
+}
+
+.btn {
+  border: 0;
+}
+
+.Nav-bar {
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #04173c;
+  padding: 1rem 5rem;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  border-right: 2px solid #fff;
+  padding-right: 0.8rem;
+  text-transform: uppercase;
+  transition: 0.3s ease-out;
+}
+
+.link:last-child {
+  border: none;
+}
+
+.link:hover {
+  color: #f4913e;
+  cursor: pointer;
+}
+
+.Logo > span {
+  font-size: 3rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.allcontainer > section {
+  margin-top: 1rem;
+  padding: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calc-wrapper {
+  width: 600px;
+}
+
+.calc-header {
+  margin-top: 5.5rem;
+}
+
+.calc-main {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
+}
+
+.quotes-cont {
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+  margin-top: 10%;
+}
+
+.quotation {
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #0859fd;
+  padding: 1rem;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 98vw;
+}
+
+.App {
+  position: relative;
+  height: 100vh;
+  background-color: #fff;
+  font-size: 20px;
+}
+
+.result {
+  background-color: #858694;
+  padding: 30px;
+  text-align: right;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  height: 30px;
+}
+
+.calc {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.calc-btn {
+  background: rgb(224, 224, 224);
+  border: 1px solid #cecece;
+  color: black;
+  cursor: pointer;
+  padding: 30px;
+  font-size: 1.5rem;
+}
+
+.calc-btns {
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+}
+
+.btn-zero {
+  grid-column: span 2;
+}
+
+.ops {
+  background-color: #f5913e;
 }

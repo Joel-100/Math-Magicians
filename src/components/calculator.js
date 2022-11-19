@@ -24,91 +24,87 @@ const Calculator = () => {
   }
 
   return (
-    <div className="calc">
-      <div className="result">{result}</div>
-      <div className="calc-btns">
-        <button type="button" className="calc-btn" onClick={handleClick}>
-          AC
-        </button>
-        <button type="button" className="calc-btn" onClick={handleClick}>
-          +/-
-        </button>
-        <button type="button" className="calc-btn" onClick={handleClick}>
-          %
-        </button>
-        <button
-          type="button"
-          className="calc-btn ops"
-          onClick={handleClick}
-        >
-          &divide;
-        </button>
-        <button type="button" className="calc-btn" onClick={handleClick}>
-          7
-        </button>
-        <button type="button" className="calc-btn" onClick={handleClick}>
-          8
-        </button>
-        <button type="button" className="calc-btn" onClick={handleClick}>
-          9
-        </button>
-        <button
-          type="button"
-          className="calc-btn ops"
-          onClick={handleClick}
-        >
-          x
-        </button>
-        <button type="button" className="calc-btn" onClick={handleClick}>
-          4
-        </button>
-        <button type="button" className="calc-btn" onClick={handleClick}>
-          5
-        </button>
-        <button type="button" className="calc-btn" onClick={handleClick}>
-          6
-        </button>
-        <button
-          type="button"
-          className="calc-btn ops"
-          onClick={handleClick}
-        >
-          -
-        </button>
-        <button type="button" className="calc-btn" onClick={handleClick}>
-          1
-        </button>
-        <button type="button" className="calc-btn" onClick={handleClick}>
-          2
-        </button>
-        <button type="button" className="calc-btn" onClick={handleClick}>
-          3
-        </button>
-        <button
-          type="button"
-          className="calc-btn ops"
-          onClick={handleClick}
-        >
-          +
-        </button>
-        <button
-          type="button"
-          className="calc-btn"
-          id="zero"
-          onClick={handleClick}
-        >
-          0
-        </button>
-        <button type="button" className="calc-btn" onClick={handleClick}>
-          .
-        </button>
-        <button
-          type="button"
-          className="calc-btn ops"
-          onClick={handleClick}
-        >
-          =
-        </button>
+    <div className="calc-main">
+      <div className="calc-header">
+        <h2>Lets do some Math!</h2>
+      </div>
+      <div className="calc-wrapper">
+        <div className="result">{result}</div>
+        <div className="calc-btns">
+          <button type="button" className="calc-btn" onClick={handleClick}>
+            AC
+          </button>
+          <button type="button" className="calc-btn" onClick={handleClick}>
+            +/-
+          </button>
+          <button type="button" className="calc-btn" onClick={handleClick}>
+            %
+          </button>
+          <button
+            type="button"
+            className="calc-btn ops"
+            onClick={handleClick}
+          >
+            &divide;
+          </button>
+          <button type="button" className="calc-btn" onClick={handleClick}>
+            7
+          </button>
+          <button type="button" className="calc-btn" onClick={handleClick}>
+            8
+          </button>
+          <button type="button" className="calc-btn" onClick={handleClick}>
+            9
+          </button>
+          <button
+            type="button"
+            className="calc-btn ops"
+            onClick={handleClick}
+          >
+            x
+          </button>
+          <button type="button" className="calc-btn" onClick={handleClick}>
+            4
+          </button>
+          <button type="button" className="calc-btn" onClick={handleClick}>
+            5
+          </button>
+          <button type="button" className="calc-btn" onClick={handleClick}>
+            6
+          </button>
+          <button
+            type="button"
+            className="calc-btn ops"
+            onClick={handleClick}
+          >
+            -
+          </button>
+          <button type="button" className="calc-btn" onClick={handleClick}>
+            1
+          </button>
+          <button type="button" className="calc-btn" onClick={handleClick}>
+            2
+          </button>
+          <button type="button" className="calc-btn" onClick={handleClick}>
+            3
+          </button>
+          <button type="button" className="calc-btn ops" onClick={handleClick}>
+            +
+          </button>
+          <button type="button" className="calc-btn btn-zero" onClick={handleClick}>
+            0
+          </button>
+          <button type="button" className="calc-btn" onClick={handleClick}>
+            .
+          </button>
+          <button
+            type="button"
+            className="calc-btn ops"
+            onClick={handleClick}
+          >
+            =
+          </button>
+        </div>
       </div>
     </div>
   );
